@@ -79,7 +79,7 @@ for row in rows[1:]:
                 # some defaults
                 talk['day'] = cellDict[cellCount[count]]
                 talk['time'] = time
-                talk['track'] = '26th Floor Bally\'s'
+                talk['track'] = 'Skyview 1, 2, 5, 6 -Bally\'s'
                 talk['tags'] = 'packet hacking village'
                 
                 # save info
