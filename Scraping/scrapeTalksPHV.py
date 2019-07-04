@@ -118,8 +118,8 @@ for i in range(1,len(TalksList)):
         TalksList[i-1]['duration'] = '{0:.0f}'.format(minutes)
     else:
         # seems that the last talks of the day are 60 min, may change in the future
-        TalksList[i-1]['duration'] = '60 minutes'
-TalksList[i]['duration'] = '60 minutes'
+        TalksList[i-1]['duration'] = '60'
+TalksList[i]['duration'] = '60'
 
 # save the resuts
 dirname = os.path.dirname(__file__)
