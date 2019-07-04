@@ -115,7 +115,7 @@ duration = '60 minutes'
 for i in range(1,len(TalksList)):
     if TalksList[i]['day'] == TalksList[i-1]['day']:
         minutes = (parser.parse(TalksList[i]['time']) - parser.parse(TalksList[i-1]['time']))/timedelta(seconds=60)
-        TalksList[i-1]['duration'] = '{0:.0f} minutes'.format(minutes)
+        TalksList[i-1]['duration'] = '{0:.0f}'.format(minutes)
     else:
         # seems that the last talks of the day are 60 min, may change in the future
         TalksList[i-1]['duration'] = '60 minutes'

@@ -39,7 +39,7 @@ for article in articles:
         agenda['track'] = ''
     
     if g0[1] != '':
-        agenda['duration'] = g0[1]
+        agenda['duration'] = g0[1].split(' minutes')[0]
     else:
         agenda['duration'] = ''
     

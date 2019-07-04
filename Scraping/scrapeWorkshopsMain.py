@@ -35,7 +35,7 @@ for article in articles:
         workshop['track'] = g0[2]
         
         minutes = (parser.parse(t2) - parser.parse(t1))/timedelta(seconds=60)
-        workshop['duration'] = '{0:.0f} minutes'.format(minutes)
+        workshop['duration'] = '{0:.0f}'.format(minutes)
     else:
         workshop['day'] = ''
         workshop['time'] = ''
